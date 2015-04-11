@@ -1,19 +1,11 @@
-<html>
-  <head>
-    <title>Suite Chooser</title>
-    <link rel="stylesheet" type="text/css" 
-	  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  </head>
-
-  <body>
-    <h1>Pick Your Options</h1>
-    <ul>
-      {% for opt in options.keys() %}
-      <li>
-	{{ opt }}
-      </li>
-      {% endfor %}
-    </ul>
-
-  </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Pick Your Options</h1>
+<ul>
+  {% for opt in options.keys() %}
+  <li>
+    {{ opt }}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
