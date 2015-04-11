@@ -1,10 +1,12 @@
 from setuptools import setup
 
-setup(name='YourAppName',
-      version='1.0',
-      description='OpenShift App',
-      author='Your Name',
-      author_email='example@example.com',
-      url='http://www.python.org/sigs/distutils-sig/',
-#      install_requires=['Django>=1.3'],
+setup(name='SuiteGenerator',
+      version='0.1',
+      description='Shim for translating things',
+      author='Mark Rothlisberger',
+      author_email='rothlmar@gmail.com',
+      url='http://suites-votech.rhcloud.com/',
+      install_requires=['flask>0.10'],
+      packages = ['suitetester']
+      package_data = {'suitetester': ['templates/*.html', 'static/*']}
      )

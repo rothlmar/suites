@@ -1,0 +1,1 @@
+from suitetester import application
