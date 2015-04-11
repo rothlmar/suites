@@ -1,1 +1,1 @@
-from suitetester import application
+from suitetester import app as application
