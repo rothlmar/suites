@@ -1,11 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Pick Your Options</h1>
-<ul>
-  {% for opt in options.keys() %}
-  <li>
-    {{ opt }}
-  </li>
+<form action="/suites" method="GET">
+  {% for optname, optval in options.items() %}
+  <div>
+    <input type="checkbox" name="options" value="{{ optval }}">
+    {{ optname }}
+  </div>
   {% endfor %}
-</ul>
+{#
+  <select multiple name="options">
+    {% for opt in options.keys() %}
+    <option value="{{ opt }}">
+      {{ opt }}
+    </option>
+    {% endfor %}
+  </select>
+#}
+  <input type="submit" />
+</form>
 {% endblock %}

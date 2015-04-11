@@ -6,7 +6,13 @@
   </head>
 
   <body>
-    {% block content %}
-    {% endblock %}
+    <div class="container">
+      <div class="row">
+	<div class="col-md-10 col-md-offset-1">
+	  {% block content %}
+	  {% endblock %}
+	</div>
+      </div>
+    </div>
   </body>
 </html>
