@@ -7,6 +7,6 @@ setup(name='SuiteGenerator',
       author_email='rothlmar@gmail.com',
       url='http://suites-votech.rhcloud.com/',
       install_requires=['flask>0.10'],
-      packages = ['suitetester']
+      packages = ['suitetester'],
       package_data = {'suitetester': ['templates/*.html', 'static/*']}
      )
